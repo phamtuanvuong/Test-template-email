@@ -4,7 +4,7 @@ module.exports.sendMail = async (req, res) => {
   const data = req.body;
   console.log("data", data);
   try {
-    await sendMail({ template: "template1", ...data });
+    await sendMail({ template: "template2", ...data });
     res.send("Send mail successfully !");
   } catch (error) {
     console.log("error", error);
